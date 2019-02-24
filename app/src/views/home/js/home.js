@@ -1,14 +1,42 @@
 import React from 'react';
+import {
+  Link
+} from 'react-router-dom';
 
-export default class Home extends React.Component {
+export class HomeSidebar extends React.Component {
+
+	render(props, state) {
+		return (
+			<div>
+
+				<div className="list-group">
+					<Link to="/whycrystal" className="list-group-item list-group-item-action">
+						Why Crystal?
+					</Link>
+
+					<Link to="/whyamber" className="list-group-item list-group-item-action">
+						Why Amber?
+					</Link>
+
+				</div>
+
+			</div>
+		)
+	}
+}
+
+export class Home extends React.Component {
+
+	componentDidMount() {
+		window.hljs.initHighlightingOnLoad()
+	}
 
 	render(props, state) {
 		return (
 			<section className="home">
         <div className="row">
           <div className="col-sm-12 main">
-            <div id="logo" className="col-sm-6"></div>
-            <div className="col-sm-6">
+            <div className="col-sm-7">
               <h2>Welcome to Amber Framework!</h2>
               <p>Thank you for trying out the Amber Framework.
               We are working hard to provide a super fast and reliable framework that provides
@@ -24,6 +52,34 @@ export default class Home extends React.Component {
             </div>
           </div>
         </div>
+
+				<div className="row">
+					<div className="col-sm-12 main">
+						<p>
+							This application was generated with the recipe <span className="home-main-info">damianham/amber_demo</span>
+						</p>
+
+						<p>
+							To generate a new application with this recipe use;
+						</p>
+
+						<pre>
+							<code className="crystal">
+								amber new -d sqlite -r damianham/amber_demo
+							</code>
+						</pre>
+
+						<p>
+							Change sqlite for mysql or pg accordingly
+						</p>
+
+						<p>
+							You can find this recipe at
+							<span className="home-main-info">https://github.com/damianham/amber_demo</span>
+						</p>
+
+					</div>
+				</div>
 			</section>
 		);
 	}

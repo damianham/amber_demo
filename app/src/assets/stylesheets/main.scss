@@ -23,5 +23,12 @@ $primary: #f4994b;
   overflow-x: auto;
 }
 
+.home-main-info {
+  color: #66aadd;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
 @import './modules.scss';
 @import './toastr.scss';

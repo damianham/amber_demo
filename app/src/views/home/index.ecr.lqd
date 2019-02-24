@@ -9,3 +9,21 @@
     </div>
   </div>
 </div>
+
+
+<div class="row justify-content-center">
+  <div class="col-sm-12 col-md-6">
+
+    <pre>
+      <code class="crystal">
+        amber new -d sqlite -r damianham/amber_react_sidebar
+      </code>
+    </pre>
+
+  </div>
+</div>
+
+
+<script>
+  window.hljs.initHighlightingOnLoad();
+</script>
