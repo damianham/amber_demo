@@ -10,7 +10,7 @@ amber g scaffold Category title:string
 amber g scaffold Post title:string description:text category:reference user:reference
 amber g scaffold Comment body:text post:reference user:reference
 
-cp ../seeds.cr db/seeds.cr
+cp ../amber_demo/seeds.cr db/seeds.cr
 
 amber db migrate seed
 
