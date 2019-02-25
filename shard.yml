@@ -1,11 +1,11 @@
-name: amber_react_sidebar
+name: amber_demo
 version: 0.1.0
 
 authors:
    - Damian Hamill <damianham@gmail.com>
 
 description: |
-   Application recipe for a React SPA with Granite ORM
+   Amber demo application recipe for a React SPA with Granite ORM
 
 license: MIT
 
