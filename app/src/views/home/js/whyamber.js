@@ -80,6 +80,8 @@ export default class WhyAmber extends React.Component {
 						</p>
 					</div>
 				</div>
+				(<a href="https://amberframework.org">source</a> https://amberframework.org/)
+				
 			</section>
 		);
 	}
